@@ -9,6 +9,11 @@ import com.hamidreza.alizade.designpattern.Command.CommandProcessor
 import com.hamidreza.alizade.designpattern.Command.OrderAddCommand
 import com.hamidreza.alizade.designpattern.Command.OrderPayCommand
 import com.hamidreza.alizade.designpattern.Facade.ShapeMaker
+import com.hamidreza.alizade.designpattern.Factory.Vehicle
+import com.hamidreza.alizade.designpattern.Factory.VehicleFactory
+
+
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -42,7 +47,9 @@ class MainActivity : AppCompatActivity() {
         fahrenheitTemperature.temperature = 100.0
         Log.e("Adapter","${fahrenheitTemperature.temperature} F -> ${celsiusTemperature.temperature} C")
 
+    var vehicleFactory=VehicleFactory()
 
-
+        val motorCycle :Vehicle= vehicleFactory.getVehicleFactory("MotorCycle")!!
+        motorCycle.showVehicleType()
     }
 }
