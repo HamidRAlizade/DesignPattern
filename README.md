@@ -10,9 +10,9 @@
 
 #### Future You should minimize time spent doing “detective work” looking for intricate project dependencies, so they would prefer  a project that’s as reusable, readable, and recognizable as possible. These goals span a single object all the way up to the entire project and lead to patterns that fall into the following categories:
 
-    Creational patterns: how you create objects.
-    Structural patterns: how you compose objects.
-    Behavioral patterns: how you coordinate object interactions.
+   - Creational patterns: how you create objects.
+   - Structural patterns: how you compose objects.
+   - Behavioral patterns: how you coordinate object interactions.
 
 #### You may already be using one or several of these patterns already without having A Capitalized Fancy Name for it, but Future You will appreciate you not leaving design decisions up to intuition alone.
 
